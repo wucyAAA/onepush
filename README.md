@@ -13,6 +13,19 @@ git push
 除此不会有其它功能，适用于个人项目提交。
 ## Simple usage
 ```
+不想下载,就直接运行：
+
+npx 1push
+
+添加提交信息:
+
+npx 1push -m 'not first commit'
+
+如果你想打包
+
+npx 1push -b
+```
+```
 下载：
 npm install onepush -D  
 
