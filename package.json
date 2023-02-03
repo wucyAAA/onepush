@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "onepush": "./bin/index.js"
+    "1push": "./index.js"
   },
   "author": "wucy",
   "license": "ISC",
