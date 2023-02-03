@@ -13,7 +13,7 @@ git push
 ## Simple usage
 ```
 下载：
-npm install onepush
+npm install onepush -D  
 
 首先注册命令到全局:
 
