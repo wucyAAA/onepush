@@ -12,6 +12,9 @@ git push
 除此不会有其它功能，适用于个人项目提交。
 ## Simple usage
 ```
+下载：
+npm install onepush
+
 首先注册命令到全局:
 
 npm link 
