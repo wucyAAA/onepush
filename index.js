@@ -24,5 +24,5 @@ let {status} = spawn.sync('git', ['push'], { stdio: 'inherit' });
 
 if(status == 0){
   console.log('\n')
-  console.log(chalk.magenta('----------------- 加油！我们能赢！-----------------'))
+  console.log('%c----------------- 加油！我们能赢！-----------------', "color: magenta")
 }
