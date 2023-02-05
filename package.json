@@ -12,7 +12,6 @@
   "author": "wucy",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^4.0.0",
     "cross-spawn": "^7.0.3",
     "minimist": "^1.2.7"
   }
