@@ -4,7 +4,7 @@ const spawn = require('cross-spawn');
 
 var argv = require('minimist')(process.argv.slice(2));
 
-console.log('\033[31;105m----------------- 又是努力的一天！-----------------\033[m')
+// console.log('\033[31;105m----------------- 又是努力的一天！-----------------\033[m')
 
 if(argv.b){
   spawn.sync('npm', ['run', 'build'], { stdio: 'inherit' });
