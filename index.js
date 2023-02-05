@@ -4,7 +4,9 @@ const spawn = require('cross-spawn');
 
 var argv = require('minimist')(process.argv.slice(2));
 
-// console.log('\033[31;105m----------------- 又是努力的一天！-----------------\033[m')
+let arr = ['又是努力的一天！','加油！我们能赢！','今天也要元气满满哦！','王牌飞行员申请出战！','恕瑞玛，你的皇帝回来了！']
+let str = arr[Math.floor(Math.random()*5)]
+console.log('\033[31;105m----------------- ',str,'-----------------\033[m')
 
 if(argv.b){
   spawn.sync('npm', ['run', 'build'], { stdio: 'inherit' });
@@ -19,9 +21,6 @@ spawn.sync('git', ['add', '.'], { stdio: 'inherit' });
 
 spawn.sync('git', ['commit','-m', m], { stdio: 'inherit' });
 
-let {status} = spawn.sync('git', ['push'], { stdio: 'inherit' });
+spawn.sync('git', ['push'], { stdio: 'inherit' });
 
-if(status == 0){
-  console.log('\n')
-  console.log('\033[31;105m,----------------- 加油！我们能赢！-----------------,\033[m')
-}
+ 
