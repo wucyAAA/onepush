@@ -15,15 +15,15 @@ git push
 ```
 不想下载,就直接运行：
 
-npx push
+npx 1push
 
 添加提交信息:
 
-npx push -m 'not first commit'
+npx 1push -m 'not first commit'
 
 如果你想打包:
 
-npx push -b
+npx 1push -b
 ```
 ```
 下载：
