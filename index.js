@@ -23,6 +23,5 @@ spawn.sync('git', ['commit','-m', m], { stdio: 'inherit' });
 let {status} = spawn.sync('git', ['push'], { stdio: 'inherit' });
 
 if(status == 0){
-  console.log('\n')
   console.log('%c----------------- 加油！我们能赢！-----------------', "color: magenta")
 }
