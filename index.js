@@ -5,7 +5,7 @@ const chalk = require('chalk');
 
 var argv = require('minimist')(process.argv.slice(2));
 
-console.log(chalk.magenta('\n----------------- 又是努力的一天！-----------------\n'))
+console.log('\n',chalk.magenta('----------------- 又是努力的一天！-----------------'))
 
 if(argv.b){
   spawn.sync('npm', ['run', 'build'], { stdio: 'inherit' });
@@ -23,5 +23,5 @@ spawn.sync('git', ['commit','-m', m], { stdio: 'inherit' });
 let {status} = spawn.sync('git', ['push'], { stdio: 'inherit' });
 
 if(status == 0){
-  console.log(chalk.magenta('\n----------------- 加油！我们能赢！-----------------\n'))
+  console.log('\n',chalk.magenta('----------------- 加油！我们能赢！-----------------'))
 }
