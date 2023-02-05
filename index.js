@@ -20,6 +20,8 @@ spawn.sync('git', ['add', '.'], { stdio: 'inherit' });
 
 spawn.sync('git', ['commit','-m', m], { stdio: 'inherit' });
 
-spawn.sync('git', ['push'], { stdio: 'inherit' });
+let {status} = spawn.sync('git', ['push'], { stdio: 'inherit' });
 
-console.log(chalk.magenta('\n----------------- 加油！我们能赢！-----------------\n'))
+if(status == 0){
+  console.log(chalk.magenta('\n----------------- 加油！我们能赢！-----------------\n'))
+}
