@@ -15,15 +15,15 @@ git push
 ```
 不想下载,就直接运行：
 
-npx 1push
+npx push
 
 添加提交信息:
 
-npx 1push -m 'not first commit'
+npx push -m 'not first commit'
 
-如果你想打包
+如果你想打包:
 
-npx 1push -b
+npx push -b
 ```
 ```
 下载：
@@ -35,13 +35,13 @@ npm link
 
 直接运行:
 
-1push
+push
 
 添加提交信息:
 
-1push -m 'not first commit'
+push -m 'not first commit'
 
-如果你想打包
+如果你想打包:
 
-1push -b
+push -b
 ```
